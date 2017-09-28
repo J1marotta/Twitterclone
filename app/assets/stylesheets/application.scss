@@ -12,15 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require styles.css
  */
 
-
- ul.hmenu {
-   list-style: none;
-   margin: 0 0 2em;
-   padding: 0;
- }
-
- ul.hmenu li {
-   display: inline;
- }
+ @import "bootstrap-sprockets";
+ @import "bootstrap"
