@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Tweets</h1>
+<%= link_to 'New Tweet', new_tweet_path, class: "btn btn-primary large" %>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Message</th>
@@ -14,9 +15,9 @@
     <% @tweets.each do |tweet| %>
       <tr>
         <td><%= tweet.message %></td>
-        <td><%= link_to 'Show', tweet %></td>
-        <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
-        <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', tweet, class: "btn btn-primary"%></td>
+        <td><%= link_to 'Edit', edit_tweet_path(tweet), class: "btn btn-primary" %></td>
+        <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +25,4 @@
 
 <br>
 
-<%= link_to 'New Tweet', new_tweet_path %>
+<!-- <%= link_to 'New Tweet', new_tweet_path, class: "btn btn-primary large" %> -->

@@ -1,23 +1,9 @@
 <h1><%= @brand %></h1>
+<p id="notice"><%= notice %></p>
 
 
 <ul>
 
-	<% @tweets.each do |tweet| %>
-		<li>
-			<div>
-				<%= tweet.message %>
-				<div class ="date">
-				<%= tweet.created_at.getlocal.strftime("%e %b %Y %H:%M:%S%p") %>
-				<p></p>
-
-				</div>
-				</div>
-			</div>
-		</li>
-
-	<% end %>
-
-	<%= link_to 'New Tweet', new_tweet_path %>
+	<%= link_to 'New Tweet', new_tweet_path, class: "btn btn-primary" %>
 
 </ul>
