@@ -1,18 +1,10 @@
 # README
 
-## Twitter Clone With Reugen; When making a rails app, please update your readme as you go.
-
-^never update at the end, as you will lose detail in your readme files^
-
-### Design guide
-![links]
-[images]
-
-## user stories
-trello link .
-
-examples
+## Twitter Clone With Reugen; When making a rails app.
+	added bootstrap 3 gem, and sass and improved UI.
 
 
-## ERD
-![ entity relationship diagram (ERD) shows the relationships of entity sets stored in a database. An entity in this context is a component of data. In other words, ER diagrams illustrate the logical structure of databases. ]
+	Known bugs : ~~"Currently the submit button only works once. and then crashes"~~
+				This was caused because you can't put a form inside a table, so I removed my Table classes
+
+				Also fixed my button errors by forcing white on all btn classses with !important
